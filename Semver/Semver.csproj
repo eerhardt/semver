@@ -5,7 +5,7 @@
     <Copyright>Copyright © 2013-2025 Jeff Walker, Max Hauser</Copyright>
     <AssemblyTitle>Semantic versioning</AssemblyTitle>
     <Authors>Jeff Walker, Max Hauser</Authors>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net8.0</TargetFrameworks>
     <LangVersion>12.0</LangVersion>
     <Nullable>enable</Nullable>
     <NoWarn>$(NoWarn);CS1591;CA1303</NoWarn>
@@ -61,6 +61,7 @@
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.0.0" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="3.0.3" Condition="'$(TargetFramework)' == 'netstandard2.1'" />
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="5.0.1" Condition="'$(TargetFramework)' == 'net5.0'" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="8.0.0" Condition="'$(TargetFramework)' == 'net8.0'" />
 
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
